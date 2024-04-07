@@ -1022,7 +1022,7 @@ focus = {
 		country_event = al_japan.1001
 	}
 }
-#近衛＝町田
+#民主ルート
 focus = {
 	id = RJP_nameless_agency
 	icon = GFX_focus_pro_zaibatsu_focus_1
@@ -1161,8 +1161,188 @@ focus = {
 		
 	}
 }
+#近衛ツリー
 
 
+#軍政ルート
+focus = {
+	id = RJP_young_officer
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_kokutai }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy }
+	bypass = { }
+	x = 29
+	y = 1
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = RJP_red_baiting
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_kokutai }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 31
+	y = 1
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_kamikakushi
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_red_baiting }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 31
+	y = 2
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_special_budget
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_kamikakushi }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 31
+	y = 3
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_reserve_duty
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_young_officer }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 29
+	y = 2
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_reserve_duty
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_young_officer }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 29
+	y = 2
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_navy_absorption
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_young_officer }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 29
+	y = 3
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = RJP_contact_with_extremists
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_navy_absorption }
+	prerequisite = {focus = RJP_special_budget }
+	available = {
+		has_country_flag = goodbye_democracy
+	}
+	allow_branch= {	has_country_flag = goodbye_democracy}
+	bypass = { }
+	x = 30
+	y = 4
+	cost = 1
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
 #見やすさ用
 focus = {
 	id = RJP_no_name
