@@ -1,0 +1,651 @@
+focus_tree = {
+	id = japan_3month
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = JAP
+		}
+	}
+	
+	default = no
+	continuous_focus_position = { x = 2222 y = 1100 }
+
+	focus = { 
+		id = JAP_gunji_sangikan_kaigi
+		icon = GFX_focus_gunji_sangikan_kaigi
+		available = {
+			JAP = {
+				has_war_with = BYJ
+				}
+				
+			}
+		bypass = { }
+		x = 11
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = japan.500
+				}
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = { #unlocks decision category
+		id = JAP_planning_advance
+		icon = GFX_focus_planning_advance
+		prerequisite = { focus = JAP_gunji_sangikan_kaigi }
+		available = {
+			JAP = {
+				has_war_with = BYJ
+				}
+				
+			}
+		bypass = { 
+			has_full_control_of_state = 608
+		}
+		x = 11
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = japan.501
+				}
+			}
+		}
+
+		focus = { 
+		id = JAP_radical_suggestion
+		icon = GFX_focus_radical_suggestion
+		mutually_exclusive = { focus = JAP_continuing_as_planned }
+		prerequisite = { focus = JAP_planning_advance }
+		available = {
+			JAP = {
+				has_war_with = BYJ
+				}
+				
+			}
+		bypass = { 
+		
+		}
+		x = 7
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+				}
+			country_event = {
+				id = japan.502
+				}
+			}
+		}
+
+		focus = { 
+			id = JAP_continuing_as_planned
+			icon = GFX_focus_continuing_as_planned
+			mutually_exclusive = { focus = JAP_radical_suggestion }
+			prerequisite = { focus = JAP_planning_advance }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+					
+				}
+			bypass = { }
+			x = 15
+			y = 3
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = cat_grand_battle_plan
+					}
+				country_event = {
+					id = japan.503
+				}
+			}
+		}
+
+		focus = { 
+			id = JAP_overcoming_hurdles
+			icon = GFX_focus_overcoming_hurdles
+			prerequisite = { focus = JAP_radical_suggestion }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				
+				}
+			bypass = {	}
+			x = 7
+			y = 4
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_army_reform
+				}
+			}
+
+		focus = { 
+			id = JAP_airforce_coordination
+			icon = GFX_focus_airforce_coordination
+			prerequisite = { focus = JAP_overcoming_hurdles }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				
+				}
+			bypass = {	}
+			x = 6
+			y = 5
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				air_experience = 50
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = cat_battlefield_support
+				}
+			}
+		}
+
+		focus = { 
+			id = JAP_army_streamlining
+			icon = GFX_focus_army_streamlining
+			prerequisite = { focus = JAP_overcoming_hurdles }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				
+				}
+			bypass = {	}
+			x = 8
+			y = 5
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_stronger_tank
+			}
+		}
+
+		focus = { 
+			id = JAP_independent_tanks
+			icon = GFX_focus_tanks
+			prerequisite = { focus = JAP_airforce_coordination }
+			prerequisite = { focus = JAP_army_streamlining }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				NOT = {
+					has_active_mission = JAP_streamline
+					has_country_flag = JAP_streamline_failed_flag
+					} 
+				}
+			bypass = {	}
+			x = 7
+			y = 6
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_trait = {
+					character = JAP_yamashita_tomoyuki
+					slot = corps_commander
+					trait = panzer_leader
+			    }
+
+			   add_trait = {
+				character = JAP_yamashita_tomoyuki
+				slot = corps_commander
+				trait = trait_engineer
+		  		}
+
+				division_template = {
+					name = "Sensha Shidan"
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						motorized = { x = 2 y = 0 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 2 y = 1 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 2 y = 2 }
+						motorized = { x = 3 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 745 }
+					create_unit = {
+						division = "name = \"Sensha Daiichi Shidan\" division_template = \"Sensha Shidan\" start_experience_factor = 0.5"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"Sensha Daini Shidan\" division_template = \"Sensha Shidan\" start_experience_factor = 0.5"
+						owner = JAP
+					}
+					create_unit = {
+						division = "name = \"Sensha Daisan Shidan\" division_template = \"Sensha Shidan\" start_experience_factor = 0.5"
+						owner = JAP
+					}
+
+					create_unit = {
+						division = "name = \"Sensha Daiyon Shidan\" division_template = \"Sensha Shidan\" start_experience_factor = 0.5"
+						owner = JAP
+					}
+				}
+			}
+		}
+
+		focus = { 
+			id = JAP_breaking_the_tide
+			icon = GFX_focus_breaking_the_tide
+			prerequisite = { focus = JAP_independent_tanks }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				
+				}
+			bypass = {	}
+			x = 6
+			y = 7
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_reserve_stopping
+			}
+		}
+
+		focus = { 
+			id = JAP_securing_key_points
+			icon = GFX_focus_securing_key_points
+			prerequisite = { focus = JAP_independent_tanks }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 8
+			y = 7
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				add_ideas = JAP_urban_combat
+			}
+		}
+			
+		focus = { 
+			id = JAP_full_speed_ahead
+			icon = GFX_focus_full_speed_ahead
+			prerequisite = { focus = JAP_breaking_the_tide }
+			prerequisite = { focus = JAP_securing_key_points }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 7
+			y = 9
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+
+				hidden_effect = {
+				add_ideas = { 
+					JAP_doctrine_complete
+				}
+
+				remove_ideas = {
+					JAP_army_reform 
+				}
+
+				remove_ideas = {
+					JAP_stronger_tank 
+				}
+
+				remove_ideas = {
+					JAP_urban_combat
+				}
+
+				remove_ideas = {
+					JAP_reserve_stopping
+				}
+			}
+				custom_effect_tooltip = JAP_doctrine_completion
+			}
+		}		
+			
+		focus = { 
+			id = JAP_operation_complete
+			icon = GFX_focus_operation_complete
+			prerequisite = { focus = JAP_full_speed_ahead focus = JAP_executing_the_masterpiece }
+			available = {
+				JAP = {
+					has_full_control_of_state = 608
+					has_full_control_of_state = 866
+					has_full_control_of_state = 607
+					}
+				}
+			bypass = {	}
+			x = 11
+			y = 10
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				
+				if = {
+					limit = {is_ai = no}
+					country_event = { id = al_japan.504 }
+					
+				}
+				else = {
+					country_event = { id = al_japan.504 }
+				}
+			}
+		}
+		focus = { 
+			id = JAP_knowing_our_enemy
+			icon = GFX_focus_knowing_our_enemy
+			prerequisite = { focus = JAP_continuing_as_planned }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 15
+			y = 4
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_plan_supremacy
+			}
+		}
+
+		focus = { 
+			id = JAP_multiple_prongs
+			icon = GFX_focus_multiple_prongs
+			prerequisite = { focus = JAP_knowing_our_enemy }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 14
+			y = 5
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_multiple_pronged_assault
+
+				add_trait = {
+					character = JAP_imamura_hitoshi
+					slot = corps_commander
+					trait = naval_invader
+			   	}
+
+			   	add_trait = {
+				character = JAP_imamura_hitoshi
+				slot = corps_commander
+				trait = naval_liason
+		  		}
+
+			   add_trait = {
+				character = JAP_toyoda_soemu
+				slot = navy_leader
+				trait = ground_pounder
+		   		}
+			}
+		}
+		
+		focus = { 
+			id = JAP_deep_infiltration
+			icon = GFX_focus_deep_infiltration
+			prerequisite = { focus = JAP_knowing_our_enemy }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 16
+			y = 5
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_infiltration
+			}
+		}
+
+		focus = { 
+			id = JAP_war_of_organization
+			icon = GFX_focus_war_of_organization
+			prerequisite = { focus = JAP_deep_infiltration }
+			prerequisite = { focus = JAP_multiple_prongs }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 15
+			y = 6
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_organization
+
+				add_trait = {
+					character = JAP_hata_shunroku
+					slot = field_marshal
+					trait = organizer
+				}
+				add_trait = {
+					character = JAP_hata_shunroku
+					slot = field_marshal
+					trait = logistics_wizard
+				}
+			}
+		}
+
+		focus = { 
+			id = JAP_logistical_systems
+			icon = GFX_focus_logistical_systems
+			prerequisite = { focus = JAP_war_of_organization }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 15
+			y = 7
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				add_ideas = JAP_railway_repair
+			}
+		}
+
+		focus = { 
+			id = JAP_large_front_operation
+			icon = GFX_focus_large_front_operation
+			prerequisite = { focus = JAP_logistical_systems }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+				}
+			bypass = {	}
+			x = 15
+			y = 8
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+				activate_mission = JAP_final_checklist
+			}
+		}
+
+		focus = { 
+			id = JAP_executing_the_masterpiece
+			icon = GFX_focus_executing_the_masterpiece
+			prerequisite = { focus = JAP_large_front_operation }
+			available = {
+				JAP = {
+					has_war_with = BYJ
+					}
+					NOT = {
+						has_country_flag = JAP_unprepared_flag
+					}
+				}
+			bypass = {	}
+			x = 15
+			y = 9
+			cost = 1
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			completion_reward = {
+
+				hidden_effect = {
+				add_ideas = { 
+					JAP_ichigo_ichie
+				}
+
+				remove_ideas = {
+					JAP_plan_supremacy
+				}
+
+				remove_ideas = {
+					JAP_infiltration
+				}
+
+				remove_ideas = {
+					JAP_multiple_pronged_assault
+				}
+
+				remove_ideas = {
+					JAP_organization
+				}
+			}
+				custom_effect_tooltip = JAP_onestrike
+			}
+		}
+	}
+			
