@@ -1,0 +1,345 @@
+add_namespace = al_japan
+##議会
+country_event ={
+    id = al_japan.1001
+    title = al_japan.1001.t
+    desc = al_japan.1001.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND={
+            NOT = {has_war_with = BYJ}
+            OR = {
+                609 = { is_controlled_by = JAP }
+                BYJ = { is_puppet_of = JAP }
+            }
+            has_goverment = despotism
+            has_completed_focus = RJP_kokutai
+        }
+    }
+
+    option = {
+        name = al_japan.1001.a
+        set_country_flag = stand_with_democracy
+        hidden_effect = {
+            JAP = {
+                country_event = { id = al_japan.1002 days = 1 }
+            }
+        }
+    }
+    option = {
+        name = al_japan.1001.b
+        hidden_effect = {
+            set_country_flag = goodbye_democracy
+            JAP = {
+                country_event = { id = al_japan.1003 day = 1 }
+            }
+        }
+    }
+}
+
+country_event ={
+    id = al_japan.1002
+    title = al_japan.1002.t
+    desc = al_japan.1002.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND={
+            NOT = {has_war_with = BYJ}
+            OR = {
+                609 = { is_controlled_by = JAP }
+                BYJ = { is_puppet_of = JAP }
+            }
+            has_goverment = despotism
+        }
+    }
+
+    option = {
+        name = al_japan.1002.a
+        hidden_effect = {
+            JAP = {
+                country_event = { id = al_japan.1004 days = 10 }
+            }
+        }
+    }
+}
+
+country_event ={
+    id = al_japan.1003
+    title = al_japan.1003.t
+    desc = al_japan.1003.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND={
+            NOT = {has_war_with = BYJ}
+            OR = {
+                609 = { is_controlled_by = JAP }
+                BYJ = { is_puppet_of = JAP }
+            }
+            has_goverment = despotism
+        }
+    }
+
+    option = {
+        name = al_japan.1003.a
+        hidden_effect = {
+            JAP = {
+            }
+        }
+    }
+}
+
+country_event ={
+    id = al_japan.1004
+    title = al_japan.1004.t
+    desc = al_japan.1004.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND={
+            NOT = {has_war_with = BYJ}
+            OR = {
+                609 = { is_controlled_by = JAP }
+                BYJ = { is_puppet_of = JAP }
+            }
+            has_goverment = despotism
+        }
+    }
+
+    option = {
+        name = al_japan.1004.a
+        hidden_effect = {
+            JAP = {}
+        }
+    }
+}
+
+country_event ={
+    id = al_japan.1101
+    title = al_japan.1101.t
+    desc = al_japan.1101.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        has_completed_focus = RJP_nameless_agency
+    }
+
+    option = {
+        name = al_japan.1101.a
+        hidden_effect = {
+            JAP = {
+            }
+        }
+    }
+}
+##維新
+country_event = {
+    id = al_japan.2201
+    title = al_japan.2201.t
+    desc = al_japan.2201.d
+    picture = GFX_sunset_crash
+
+    is_triggered_only = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = JAP
+        has_completed_focus = RJP_eigen_restoration
+    }
+
+    option = {
+        name = al_japan.2201.a
+        ai_chance = { base = 1 }
+		add_stability = -0.1
+		add_war_support = -0.05
+		add_political_power = -200
+		add_popularity = {
+			ideology = accelerationism
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = reactionism
+			popularity = -0.5
+		}
+		set_politics = {
+			ruling_party = accelerationism
+			elections_allowed = no
+		}
+    }
+
+}
+##幕政
+country_event = {
+    id = al_japan.2301
+    title = al_japan.2301.t
+    desc = al_japan.2301.d
+    picture = GFX_sunset_crash
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = JAP
+    }
+    option = {
+        name = al_japan.2301.a
+        has_completed_focus = JAP_senei
+    }
+}
+
+country_event = {
+    id = al_japan.2302
+    title = al_japan.2302.t
+    desc = al_japan.2302.d
+    picture = GFX_sunset_crash
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = al_japan.2302.a
+        trigger = {
+            tag = JAP
+            
+        }
+        hidden_effect = {
+            JAP = {
+                country_event = {id = al_japan.2303 day = 7}
+            }
+        }
+        ai_chance = { base = 1 }
+		add_stability = -0.1
+		add_war_support = -0.05
+		add_political_power = -200
+		add_popularity = {
+			ideology = reactionism
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.5
+		}
+        add_popularity = {
+			ideology = accelerationism
+			popularity = -0.5
+		}
+    }
+}
+
+country_event = {
+    id = al_japan.2303
+    title = al_japan.2303.t
+    desc = al_japan.2303.d
+    picture = GFX_sunset_crash
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = JAP
+    }
+
+    option = {
+        name = al_japan.2303.a
+        
+		set_politics = {
+			ruling_party = reactionism
+			elections_allowed = no
+		}
+    }    
+}
+
+#debug
+country_event = {
+    id = al_japan.9999
+    title = al_japan.9999.t
+    desc = al_japan.9999.t
+    picture = GFX_sunset_crash
+
+    is_triggered_only = yes
+
+    trigger = {
+        tag = JAP
+    }
+
+    option = {
+        name = al_japan.9999.a
+        load_focus_tree = al_japan_focus
+    }
+}
+
+country_event = {
+	id = al_japan.504
+	title = japan.504.t
+	desc = japan.504.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = japan.504.a
+		load_focus_tree = al_japan_focus
+		add_stability = 0.3
+		add_war_support = -0.1
+		annex_country = {
+			target = BYJ
+			transfer_troops = no
+		}
+		complete_national_focus = RJP_sunset_crash
+		add_ideas = JAP_sunset_crash
+		
+		remove_ideas = {
+			JAP_army_reform
+			JAP_stronger_tank
+			JAP_reserve_stopping
+			JAP_urban_combat
+			JAP_doctrine_complete
+			JAP_plan_supremacy
+			JAP_multiple_pronged_assault
+			JAP_infiltration
+			JAP_organization
+			JAP_ichigo_ichie
+			JAP_undersupplied_offensive
+			JAP_bloated_military_bureaucracy
+			JAP_railway_repair
+		}
+		hidden_effect = {
+			JAP = { 
+				country_event = { id = japan.505 days = 7 }
+			}
+			clr_country_flag = JAP_threemonth_flag
+			news_event = { id = news.999 days = 1 }
+			KOR = {
+				load_focus_tree = {
+					tree = generic_focus
+				}
+			}
+			MAN = {
+				load_focus_tree = {
+					tree = generic_focus
+				}
+			}
+			DAI = {
+				load_focus_tree = {
+					tree = generic_focus
+					keep_completed = yes
+				}
+			}
+		}
+	}
+}
