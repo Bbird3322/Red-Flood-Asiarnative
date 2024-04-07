@@ -1,0 +1,545 @@
+ideologies = {
+
+	accelerationism = {
+
+		types = {
+
+			futurism = {
+			}
+
+			national_rejuvenatism = {
+			}
+
+			technocracy = {
+			}
+			
+			vperedism = {
+				can_be_randomly_selected = no
+			}
+			
+			surrealism = {
+			}
+			
+			zadrugism = {
+				can_be_randomly_selected = no
+			}
+			
+			fiumanism = {
+				can_be_randomly_selected = no
+			}
+			
+			nichirenism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 248 248 248 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_fascist = yes # uses the commie AI behaviour
+	}
+
+	anarchism = {
+
+		types = {
+
+			social_anarchism = {
+			}
+
+			individualist_anarchism = {
+			}
+
+			stateless_anarchy = {
+				can_be_randomly_selected = no
+			}
+
+			mystical_anarchism = {
+				can_be_randomly_selected = no
+			}
+			
+			stratocratic_anarchism = {
+			}
+			
+			national_anarchism = {
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 164 148 110 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		can_collaborate = yes
+	}
+	
+	
+	vanguard_socialism = {
+
+		types = {
+
+			leninism = {
+			}
+
+			national_vanguardism = {
+			}
+
+			state_socialism = {
+			}
+
+			social_republicanism = {
+				can_be_randomly_selected = no
+			}
+			
+			stratocratic_socialism = {
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 195 53 10 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		can_collaborate = yes
+
+	}
+
+	popular_socialism = {
+
+		types = {
+
+			spartakism = {
+			}
+
+			syndicalism = {
+			}
+
+			folk_socialism = {
+			}
+			
+			national_syndicalism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+
+		color = { 236 73 76 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		can_collaborate = yes
+	}
+
+	revisionist_socialism = {
+
+		types = {
+
+			democratic_socialism = {
+			}
+
+			religious_socialism = {
+			}
+
+			agrarian_socialism = {
+			}
+
+			utopian_socialism = {
+				can_be_randomly_selected = no
+			}
+			
+			esoteric_socialism = {
+				can_be_randomly_selected = no
+			}
+
+			nationalist_socialism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+
+		color = { 255 174 67 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		ai_communist = yes # uses the commie AI behaviour
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		can_collaborate = yes
+	}
+
+	progressivism = {
+
+		types = {
+
+			progressive_democracy = {
+			}
+
+			left_populism = {
+			}
+
+			social_nationalism = {
+			}
+			
+			liberal_socialism = {
+			}
+			
+			progressive_corporatism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 248 127 157 }
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+			
+		}
+
+		war_impact_on_world_tension = -1.0
+		faction_impact_on_world_tension = 0.5
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+		can_collaborate = yes
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+
+	liberalism = {
+
+		types = {
+
+			social_liberalism = {
+			}
+
+			classical_liberalism = {
+			}
+
+			libertarian_capitalism = {
+				can_be_randomly_selected = no
+			}
+			
+			national_liberalism = {
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 246 232 111 }
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		war_impact_on_world_tension = -1.0
+		faction_impact_on_world_tension = 0.5
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+	conservatism = {
+
+		types = {
+
+			social_conservatism = {
+			}
+
+			liberal_conservatism = {
+			}
+
+			national_conservatism = {
+			}
+
+			right_populism = {
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 113 151 255 }
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		war_impact_on_world_tension = -1.0
+		faction_impact_on_world_tension = 0.5
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+	right_authoritarianism = {
+
+		types = {
+
+			anocracy = {
+			}
+
+			oligarchy = {
+			}
+			
+			praetorian_oligarchy = {
+			}
+			
+			plutocracy = {
+			}
+			
+			national_democracy = {
+			}
+			
+			provisional_government = {
+				can_be_randomly_selected = no
+			}
+			
+			colonial_government = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 110 110 110 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+
+	despotism = {
+
+		types = {
+
+			absolute_monarchy = {
+			}
+
+			constitutional_monarchy = {
+			}
+
+			constitutional_dictatorship = {
+			}
+
+			military_dictatorship = {
+			}
+			
+			theocracy = {
+				can_be_randomly_selected = no
+			}
+
+			personalist_dictatorship = {
+			}
+			
+			revolutionary_nationalism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 41 41 41 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+
+
+	reactionism = {
+
+		types = {
+
+			reactionary_populism = {
+			}
+
+			religious_fundamentalism = {
+			}
+
+			esoteric_reactionism = {
+				can_be_randomly_selected = no
+			}
+			
+			aristocratic_reaction = {
+
+			}
+			samurai_reactionism = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+		}
+
+		color = { 128 70 164 }
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 0.5
+
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = no
+		}
+
+		modifiers = {
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+}
