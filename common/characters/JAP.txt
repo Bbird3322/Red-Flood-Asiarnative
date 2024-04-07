@@ -1,0 +1,41 @@
+characters = {
+	RJP_konoe_fumimaro = {
+		name = "Konoe_Fumimaro"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_Konoe_Fumimaro.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_KONOE_FUMIMARO_DESC"
+			ideology = constitutional_monarchy
+			traits = { popular_figurehead }
+		}
+	}
+
+	RJP_araki_sadao = {
+		name = "Araki_Sadao"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_Araki_Sadao.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ARAKI_SADAO_DESC"
+			ideology = samurai_reaction
+		}
+	}
+
+	RJP_ando_teruzo = {
+		name = "Ando_Teruzo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_Ando_Teruzo"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ANDO_TERUZO"
+			ideologies = zadrugism
+		}
+	}
+}
