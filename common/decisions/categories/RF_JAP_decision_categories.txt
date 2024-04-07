@@ -1,0 +1,53 @@
+JAP_three_month_campaign = {
+	picture = GFX_decision_cat_picture_JAP_three_month_campaign
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 100
+}
+
+JAP_streamline = {
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 100
+}
+
+JAP_planning_offensives = {
+	picture = GFX_decision_cat_picture_JAP_planning_offensives
+	visible = { 
+		has_completed_focus = JAP_planning_advance
+	}
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 100
+}
+
+JAP_interservice_rivalry = {
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 100
+}
+
+JAP_final_checklist = {
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_completed_focus = JAP_large_front_operation
+	}
+	priority = 100
+}
+
+JAP_goken_movement = {
+	picture = GFX_dicision_cat_picture_JAP_goken_movement
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_completed_focus = RJP_kokutai
+	}
+	priority = 100
+}
