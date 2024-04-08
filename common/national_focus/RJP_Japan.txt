@@ -1038,7 +1038,6 @@ focus = {
 	ai_will_do = {
 		factor = 100
 	}
-
 	available_if_capitulated = yes
 	
 	completion_reward = {
