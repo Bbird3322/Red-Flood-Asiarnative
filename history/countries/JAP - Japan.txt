@@ -15,7 +15,7 @@ add_ideas = {
 	JAP_rural_backwater
 	JAP_zaib_dominion
 	limited_conscription
-	JAP_interservice_rivalry_balanced
+	JAP_interservice_army_strengthened
 }
 
 # Events 
@@ -183,12 +183,12 @@ set_popularities = {
 	anarchism = 0
 	revisionist_socialism = 8
 	progressivism = 1
-	liberalism = 2
+	liberalism = 1
 	conservatism = 1
 	right_authoritarianism = 14
 	despotism = 28
 	reactionism = 15
-	accelerationism = 4
+	accelerationism = 5
 }
 
 recruit_character = RJP_konoe_fumimaro

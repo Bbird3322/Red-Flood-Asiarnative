@@ -41,7 +41,7 @@ JAP_final_checklist = {
 	priority = 100
 }
 
-JAP_goken_movement = {
+RJP_goken_movement = {
 	picture = GFX_dicision_cat_picture_JAP_goken_movement
 	allowed = {
 		original_tag = JAP
@@ -49,5 +49,5 @@ JAP_goken_movement = {
 	visible = {
 		has_completed_focus = RJP_kokutai
 	}
-	priority = 100
+	priority = 101
 }

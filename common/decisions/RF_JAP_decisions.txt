@@ -1,5 +1,5 @@
 	JAP_interservice_rivalry = {
-	JAP_steel_for_guns = {
+		JAP_steel_for_guns = {
 
 		icon = generic_tank
 
@@ -61,8 +61,8 @@
 			JAP_interservice_rivalry_towards_army = yes
 			set_country_flag = JAP_steel_for_guns
 		}
-	}
-	JAP_steel_for_ships = {
+		}
+		JAP_steel_for_ships = {
 
 		icon = generic_naval
 
@@ -124,8 +124,8 @@
 			JAP_interservice_rivalry_towards_navy = yes
 			set_country_flag = JAP_steel_for_ships
 		}
-	}
-	JAP_prioritize_army_aircraft_construction = {
+		}
+		JAP_prioritize_army_aircraft_construction = {
 
 		icon = generic_tank
 
@@ -158,8 +158,8 @@
 			JAP_interservice_rivalry_towards_army = yes
 			set_country_flag = JAP_prioritize_army_aircraft_construction
 		}
-	}
-	JAP_prioritize_naval_aircraft_construction = {
+		}
+		JAP_prioritize_naval_aircraft_construction = {
 
 		icon = generic_naval
 
@@ -192,8 +192,8 @@
 			JAP_interservice_rivalry_towards_navy = yes
 			set_country_flag = JAP_prioritize_naval_aircraft_construction
 		}
-	}
-	JAP_everybody_serves = {
+		}
+		JAP_everybody_serves = {
 
 		icon = generic_tank
 
@@ -228,8 +228,8 @@
 			JAP_interservice_rivalry_towards_army = yes
 			set_country_flag = JAP_everybody_serves
 		}
-	}
-	JAP_draft_exemptions = {
+		}
+		JAP_draft_exemptions = {
 
 		icon = generic_naval
 
@@ -265,8 +265,8 @@
 			JAP_interservice_rivalry_towards_navy = yes
 			set_country_flag = JAP_draft_exemptions
 		}
-	}
-	JAP_raiding_regiments = {
+		}
+		JAP_raiding_regiments = {
 
 		icon = generic_tank
 
@@ -301,8 +301,8 @@
 			set_country_flag = JAP_raiding_regiments
 			JAP_interservice_rivalry_towards_army = yes
 		}
-	}
-	JAP_special_air_landing_force = {
+		}
+		JAP_special_air_landing_force = {
 
 		icon = generic_naval
 
@@ -338,8 +338,8 @@
 			set_country_flag = JAP_special_air_landing_force
 			JAP_interservice_rivalry_towards_navy = yes
 		}
-	}
-	JAP_favor_army = {
+		}
+		JAP_favor_army = {
 
 		icon = generic_tank
 
@@ -397,8 +397,8 @@
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			JAP_interservice_rivalry_towards_army = yes
 		}
-	}
-	JAP_favor_navy = {
+		}
+		JAP_favor_navy = {
 
 		icon = generic_naval
 
@@ -456,7 +456,7 @@
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			JAP_interservice_rivalry_towards_navy = yes
 		}
-	}
+		}
 	}
 
 	JAP_planning_offensives = {
@@ -707,25 +707,34 @@
 		RJP_kansui_movement = {
 			priority = 100
 			allowed = {tag = JAP}
-			available = {
-				has_completed_focus = RJP_civilian_control}
+			available = { 
+				AND = {
+					has_country_flag = { flag = RJP_dec_army_influence value < 10 }
+					has_country_flag = { flag = RJP_dec_democracy_power value > 80 }
+				}
+			}
+
 			activation = {has_completed_focus = RJP_kokutai}
 			selectable_mission = no
-			is_good = yes
+			is_good = no
 			days_mission_timeout = 150
 			timeout_effect = {}
-			complete_effect = {}
+			complete_effect = { complete_national_focus = RJP_civilian_control }
 		}
-		RJP_kansui_movement = {
-			priority = 100
+		RJP_mgs_rikusan = {
+			priority = 10
 			allowed = {tag = JAP}
-			available = {
-				has_completed_focus = RJP_civilian_control}
-			activation = {has_completed_focus = RJP_kokutai}
-			selectable_mission = no
-			is_good = yes
-			days_mission_timeout = 150
-			timeout_effect = {}
-			complete_effect = {}
+			visible = {	has_completed_focus = RJP_nameless_agency}
+			fire_only_once = no
+			days_re_enable = 7
+			cost = 75
+			modifier = {  }
+			remove_effect = { modify_country_flag = {
+				flag = RJP_dec_army_influence
+				value = 10
+			}
+			}
+			days_remove = 7
+
 		}
 	}

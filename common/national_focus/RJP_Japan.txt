@@ -1014,8 +1014,6 @@ focus = {
 	ai_will_do = {
 		factor = 100
 	}
-
-	available_if_capitulated = yes
 	
 	completion_reward = {
 		
@@ -1028,9 +1026,10 @@ focus = {
 	icon = GFX_focus_pro_zaibatsu_focus_1
 	prerequisite = {focus = RJP_kokutai }
 	available = {
+	}
+	allow_branch= {	
 		has_country_flag = stand_with_democracy
 	}
-	allow_branch= {	has_country_flag = stand_with_democracy }
 	bypass = { }
 	x = 29
 	y = 1
@@ -1039,20 +1038,23 @@ focus = {
 		factor = 100
 	}
 	available_if_capitulated = yes
-	
+
 	completion_reward = {
 		country_event = al_japan.1101
+		add_political_power = 25
 	}
 }
 
 focus = {
-	id = RJP_secret_meeting
+	id = RJP_kemo_katsudo
 	icon = GFX_focus_pro_zaibatsu_focus_1
 	prerequisite = {focus = RJP_kokutai }
+	mark_focus_tree_layout_dirty = yes
 	available = {
+	}
+	allow_branch= {	
 		has_country_flag = stand_with_democracy
 	}
-	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
 	x = 31
 	y = 1
@@ -1064,45 +1066,47 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		
+		add_political_power = 25
 	}
 }
+
 focus = {
-	id = RJP_kemo_katsudo
+	id = RJP_secret_meeting
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = {focus = RJP_secret_meeting }
+	prerequisite = {focus = RJP_kemo_katsudo }
 	prerequisite = {focus = RJP_nameless_agency }
 	available = {
-		has_country_flag = stand_with_democracy
 	}
 	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
-	x = 31
+	x = 32
 	y = 2
-	cost = 2
+	cost = 3
 	ai_will_do = {
 		factor = 100
+		country_event = al_japan.1103
 	}
 
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		
+		add_political_power = 100
+		country_event = al_japan.1102
 	}
 }
+
 focus = {
 	id = RJP_gunsyuku_suruzo
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = {focus = RJP_secret_meeting }
+	prerequisite = {focus = RJP_kemo_katsudo }
 	prerequisite = {focus = RJP_nameless_agency }
 	available = {
-		has_country_flag = stand_with_democracy
 	}
 	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
 	x = 30
 	y = 2
-	cost = 2
+	cost = 3
 	ai_will_do = {
 		factor = 100
 	}
@@ -1116,16 +1120,15 @@ focus = {
 focus = {
 	id = RJP_kagekiha_tsubusu
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = {focus = RJP_secret_meeting }
+	prerequisite = {focus = RJP_kemo_katsudo }
 	prerequisite = {focus = RJP_nameless_agency }
 	available = {
-		has_country_flag = stand_with_democracy
 	}
 	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
-	x = 29
+	x = 28
 	y = 2
-	cost = 2
+	cost = 3
 	ai_will_do = {
 		factor = 100
 	}
@@ -1141,9 +1144,8 @@ focus = {
 	icon = GFX_focus_pro_zaibatsu_focus_1
 	prerequisite = {focus = RJP_gunsyuku_suruzo }
 	prerequisite = {focus = RJP_kagekiha_tsubusu }
-	prerequisite = {focus = RJP_kemo_katsudo}
+	prerequisite = {focus = RJP_secret_meeting}
 	available = {
-		has_country_flag = stand_with_democracy
 	}
 	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
@@ -1161,8 +1163,51 @@ focus = {
 	}
 }
 #近衛ツリー
+focus = {
+	id = RJP_maintaining_security
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_civilian_control }
+	available = {
+		has_country_flag = win_konoe
+	}
+	allow_branch= {	has_country_flag = win_konoe }
+	bypass = { }
+	x = 27
+	y = 4
+	cost = 1
+	ai_will_do = {
+		factor = 100
+	}
 
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
 
+focus = {
+	id = RJP_educational_activities
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = {focus = RJP_civilian_control }
+	available = {
+		has_country_flag = win_konoe
+	}
+	allow_branch= {	has_country_flag = win_konoe }
+	bypass = { }
+	x = 33
+	y = 4
+	cost = 1
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
 #軍政ルート
 focus = {
 	id = RJP_young_officer
