@@ -729,12 +729,16 @@
 			days_re_enable = 7
 			cost = 75
 			modifier = {  }
-			remove_effect = { modify_country_flag = {
-				flag = RJP_dec_army_influence
-				value = 10
-			}
+			remove_effect = { 
+				random_list = {
+					1 = {
+						country_event = {id=al_japan.1201}
+					}
+					1 = {
+						country_event = {id=al_japan.1202}
+					}
+				}
 			}
 			days_remove = 7
-
 		}
 	}
