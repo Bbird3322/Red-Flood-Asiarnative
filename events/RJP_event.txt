@@ -233,7 +233,7 @@ country_event = {
         name = al_japan.1201.a
         modify_country_flag = {
             flag = RJP_dec_army_influence
-            value = -20
+            value = -30
         }
     }
 }
@@ -250,6 +250,7 @@ country_event = {
 
     option = {
         name = al_japan.1202.a
+		add_political_power = 75
         modify_country_flag = {
             flag = RJP_dec_army_influence
             value = 10
@@ -269,7 +270,7 @@ country_event = {
         name = al_japan.1203.a
         modify_country_flag = {
             flag = RJP_dec_army_influence
-            value = -10
+            value = -15
         }
     }
 }
@@ -284,6 +285,7 @@ country_event = {
     trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1204.a
+		add_political_power = 25
         modify_country_flag = {
             flag = RJP_dec_army_influence
             value = 5
@@ -303,7 +305,7 @@ country_event = {
         name = al_japan.1205.a
         modify_country_flag = {
             flag = RJP_dec_army_influence
-            value = -10
+            value = -20
         }
     }
 }
@@ -318,6 +320,7 @@ country_event = {
     trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1206.a
+		add_political_power = 25
         modify_country_flag = {
             flag = RJP_dec_army_influence
             value = 2
@@ -354,7 +357,7 @@ country_event = {
         name = al_japan.1208.a
         modify_country_flag = {
             flag = RJP_dec_army_influence
-            value = 2
+            value = 5
         }
     }
 }
@@ -371,7 +374,7 @@ country_event = {
         name = al_japan.1209.a
         modify_country_flag = {
             flag  = RJP_dec_democracy_power
-            value = 10
+            value = 50
         }
     }
 }
@@ -403,7 +406,7 @@ country_event = {
         name = al_japan.1211.a
         modify_country_flag = {
             flag  = RJP_dec_democracy_power
-            value = 7
+            value = 25
         }
     }
 }
@@ -432,7 +435,7 @@ country_event = {
         name = al_japan.1213.a
         modify_country_flag = {
             flag  = RJP_dec_democracy_power
-            value = 5
+            value = 10
         }
     }
 }
@@ -461,7 +464,7 @@ country_event = {
         name = al_japan.1215.a
         modify_country_flag = {
             flag  = RJP_dec_democracy_power
-            value = 3
+            value = 5
         }
     }
 }

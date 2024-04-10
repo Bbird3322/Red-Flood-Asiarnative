@@ -726,7 +726,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_nameless_agency}
 			fire_only_once = no
-			days_re_enable = 7
+			days_re_enable = 1
 			cost = 75
 			modifier = {  }
 			remove_effect = { 
@@ -746,6 +746,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_nameless_agency}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 50
 			modifier = {  }
 			remove_effect = { 
@@ -765,6 +766,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kagekiha_tsubusu }
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 50
 			modifier = {  }
 			remove_effect = { 
@@ -784,9 +786,10 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kokutai}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 25
 			modifier = {  }
-			remove_effect = { 
+				remove_effect = { 
 				random_list = {
 					7 = {
 						country_event = {id=al_japan.1207}
@@ -803,6 +806,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kemo_katsudo}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 100
 			modifier = {  }
 			remove_effect = { 
@@ -822,6 +826,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kemo_katsudo}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 75
 			modifier = {  }
 			remove_effect = { 
@@ -841,6 +846,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kemo_katsudo}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 50
 			modifier = {  }
 			remove_effect = { 
@@ -860,6 +866,7 @@
 			allowed = {tag = JAP}
 			visible = {	has_completed_focus = RJP_kokutai}
 			fire_only_once = no
+			days_re_enable = 1
 			cost = 25
 			modifier = {  }
 			remove_effect = { 
