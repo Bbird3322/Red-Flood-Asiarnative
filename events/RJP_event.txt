@@ -227,6 +227,8 @@ country_event = {
     is_triggered_only = yes
     fire_only_once = no
 
+    trigger = {has_completed_focus = RJP_nameless_agency }
+
     option = {
         name = al_japan.1201.a
         modify_country_flag = {
@@ -244,6 +246,8 @@ country_event = {
     is_triggered_only = yes
     fire_only_once = no
 
+    trigger = {has_completed_focus = RJP_nameless_agency }
+
     option = {
         name = al_japan.1202.a
         modify_country_flag = {
@@ -260,7 +264,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1203.a
         modify_country_flag = {
@@ -277,9 +281,9 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
-        name = al_japan.1201.a
+        name = al_japan.1204.a
         modify_country_flag = {
             flag = RJP_dec_army_influence
             value = 5
@@ -294,7 +298,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1205.a
         modify_country_flag = {
@@ -311,7 +315,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1206.a
         modify_country_flag = {
@@ -328,7 +332,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kokutai }
     option = {
         name = al_japan.1207.a
         modify_country_flag = {
@@ -342,7 +346,7 @@ country_event = {
     id = al_japan.1208
     title = al_japan.1208.t
     desc = al_japan.1208.d
-
+    trigger = {has_completed_focus = RJP_kokutai }
     is_triggered_only = yes
     fire_only_once = no
 
@@ -362,7 +366,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
     option = {
         name = al_japan.1209.a
         modify_country_flag = {
@@ -380,6 +384,8 @@ country_event = {
     is_triggered_only = yes
     fire_only_once = no
 
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+
     option = {
         name = al_japan.1210.a
     }
@@ -392,7 +398,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
     option = {
         name = al_japan.1211.a
         modify_country_flag = {
@@ -409,7 +415,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
     option = {
         name=al_japan.1212.a
     }
@@ -421,7 +427,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
     option = {
         name = al_japan.1213.a
         modify_country_flag = {
@@ -438,7 +444,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
     option = {
         name = al_japan.1214.a
     }
@@ -447,7 +453,7 @@ country_event = {
     id = al_japan.1215
     title = al_japan.1215.t
     desc = al_japan.1215.d
-
+    trigger = {has_completed_focus = RJP_kokutai }
     is_triggered_only = yes
     fire_only_once = no
 
@@ -467,7 +473,7 @@ country_event = {
 
     is_triggered_only = yes
     fire_only_once = no
-
+    trigger = {has_completed_focus = RJP_kokutai }
     option = {
         name = al_japan.1216.a
     }

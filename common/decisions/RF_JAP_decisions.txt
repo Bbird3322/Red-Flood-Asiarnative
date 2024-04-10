@@ -782,7 +782,7 @@
 		RJP_houdo_kenetu = {
 			priority = 7
 			allowed = {tag = JAP}
-			visible = {	has_completed_focus = RJP_nameless_agency}
+			visible = {	has_completed_focus = RJP_kokutai}
 			fire_only_once = no
 			cost = 25
 			modifier = {  }
@@ -858,7 +858,7 @@
 		RJP_gaito_enzetu = {
 			priority = 3
 			allowed = {tag = JAP}
-			visible = {	has_completed_focus = RJP_kemo_katsudo}
+			visible = {	has_completed_focus = RJP_kokutai}
 			fire_only_once = no
 			cost = 25
 			modifier = {  }
