@@ -201,6 +201,277 @@ country_event ={
         }
     }
 }
+
+country_event = {
+    id = al_japan.1201
+    title = al_japan.1201.t
+    desc = al_japan.1201.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1201.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1201
+    title = al_japan.1201.t
+    desc = al_japan.1201.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1201.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -20
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1202
+    title = al_japan.1202.t
+    desc = al_japan.1202.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1202.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1203
+    title = al_japan.1203.t
+    desc = al_japan.1203.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1203.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1204
+    title = al_japan.1204.t
+    desc = al_japan.1204.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1201.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1205
+    title = al_japan.1205.t
+    desc = al_japan.1205.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1205.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1206
+    title = al_japan.1206.t
+    desc = al_japan.1206.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1206.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 2
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1207
+    title = al_japan.1207.t
+    desc = al_japan.1207.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1207.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1208
+    title = al_japan.1208.t
+    desc = al_japan.1208.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1208.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 2
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1209
+    title = al_japan.1209.t
+    desc = al_japan.1209.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1209.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1210
+    title = al_japan.1210.t
+    desc = al_japan.1210.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1210.a
+    }
+}
+
+country_event = {
+    id = al_japan.1211
+    title = al_japan.1211.t
+    desc = al_japan.1211.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1211.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 7
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1212
+    title = al_japan.1212.t
+    desc = al_japan.1212.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name=al_japan.1212.a
+    }
+}
+country_event = {
+    id = al_japan.1213
+    title = al_japan.1213.t
+    desc = al_japan.1213.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1213.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1214
+    title = al_japan.1214.t
+    desc = al_japan.1214.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1214.a
+    }
+}
+country_event = {
+    id = al_japan.1215
+    title = al_japan.1215.t
+    desc = al_japan.1215.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1215.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 3
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1216
+    title = al_japan.1216.t
+    desc = al_japan.1216.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1216.a
+    }
+}
 ##維新
 country_event = {
     id = al_japan.2201

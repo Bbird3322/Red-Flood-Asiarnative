@@ -741,4 +741,137 @@
 			}
 			days_remove = 7
 		}
+		RJP_takanotsume = {
+			priority = 9
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_nameless_agency}
+			fire_only_once = no
+			cost = 50
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					3 = {
+						country_event = {id=al_japan.1203}
+					}
+					1 = {
+						country_event = {id=al_japan.1204}
+					}
+				}
+			}
+			days_remove = 7
+		}
+		RJP_naiyu_tekihatu = {
+			priority = 8
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_kagekiha_tsubusu }
+			fire_only_once = no
+			cost = 50
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					5 = {
+						country_event = {id=al_japan.1205}
+					}
+					1 = {
+						country_event = {id=al_japan.1206}
+					}
+				}
+			}
+			days_remove = 4
+		}
+		RJP_houdo_kenetu = {
+			priority = 7
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_nameless_agency}
+			fire_only_once = no
+			cost = 25
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					7 = {
+						country_event = {id=al_japan.1207}
+					}
+					1 = {
+						country_event = {id=al_japan.1208}
+					}
+				}
+			}
+			days_remove = 4
+		}
+		RJP_film_company = {
+			priority = 6
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_kemo_katsudo}
+			fire_only_once = no
+			cost = 100
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					9 = {
+						country_event = {id=al_japan.1209}
+					}
+					1 = {
+						country_event = {id=al_japan.1210}
+					}
+				}
+			}
+			days_remove = 7
+		}
+		RJP_radio_gaga = {
+			priority = 5
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_kemo_katsudo}
+			fire_only_once = no
+			cost = 75
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					9 = {
+						country_event = {id=al_japan.1211}
+					}
+					1 = {
+						country_event = {id=al_japan.1212}
+					}
+				}
+			}
+			days_remove = 7
+		}
+		RJP_shinbun_marumekomi = {
+			priority = 4
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_kemo_katsudo}
+			fire_only_once = no
+			cost = 50
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					9 = {
+						country_event = {id=al_japan.1213}
+					}
+					1 = {
+						country_event = {id=al_japan.1214}
+					}
+				}
+			}
+			days_remove = 4
+		}
+		RJP_gaito_enzetu = {
+			priority = 3
+			allowed = {tag = JAP}
+			visible = {	has_completed_focus = RJP_kemo_katsudo}
+			fire_only_once = no
+			cost = 25
+			modifier = {  }
+			remove_effect = { 
+				random_list = {
+					9 = {
+						country_event = {id=al_japan.1215}
+					}
+					1 = {
+						country_event = {id=al_japan.1216}
+					}
+				}
+			}
+			days_remove = 4
+		}
 	}
