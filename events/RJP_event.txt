@@ -516,6 +516,381 @@ country_event = {
         name = al_japan.1216.a
     }
 }
+
+country_event = {
+    id = al_japan.1221
+    title = al_japan.1221.t
+    desc = al_japan.1221.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    trigger = {has_completed_focus = RJP_nameless_agency }
+
+    option = {
+        name = al_japan.1221.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -30
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1222
+    title = al_japan.1222.t
+    desc = al_japan.1222.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    trigger = {has_completed_focus = RJP_nameless_agency }
+
+    option = {
+        name = al_japan.1222.a
+		add_political_power = 75
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1223
+    title = al_japan.1223.t
+    desc = al_japan.1223.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_nameless_agency }
+    option = {
+        name = al_japan.1223.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -15
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1224
+    title = al_japan.1224.t
+    desc = al_japan.1224.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_nameless_agency }
+    option = {
+        name = al_japan.1224.a
+		add_political_power = 25
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1225
+    title = al_japan.1225.t
+    desc = al_japan.1225.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_nameless_agency }
+    option = {
+        name = al_japan.1225.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -20
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1206
+    title = al_japan.1226.t
+    desc = al_japan.1226.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_nameless_agency }
+    option = {
+        name = al_japan.1206.a
+		add_political_power = 25
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 2
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1227
+    title = al_japan.1227.t
+    desc = al_japan.1227.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kokutai }
+    option = {
+        name = al_japan.1227.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = -5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1228
+    title = al_japan.1228.t
+    desc = al_japan.1228.d
+    trigger = {has_completed_focus = RJP_kokutai }
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1228.a
+        modify_country_flag = {
+            flag = RJP_dec_army_influence
+            value = 5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1229
+    title = al_japan.1229.t
+    desc = al_japan.1229.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+    option = {
+        name = al_japan.1229.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 50
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1230
+    title = al_japan.1230.t
+    desc = al_japan.1230.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+
+    option = {
+        name = al_japan.1230.a
+    }
+}
+
+country_event = {
+    id = al_japan.1231
+    title = al_japan.1231.t
+    desc = al_japan.1231.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+    option = {
+        name = al_japan.1231.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 25
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1232
+    title = al_japan.1232.t
+    desc = al_japan.1232.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+    option = {
+        name=al_japan.1232.a
+    }
+}
+country_event = {
+    id = al_japan.1233
+    title = al_japan.1233.t
+    desc = al_japan.1233.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+    option = {
+        name = al_japan.1233.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 10
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1234
+    title = al_japan.1234.t
+    desc = al_japan.1234.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kemo_katsudo }
+    option = {
+        name = al_japan.1234.a
+    }
+}
+country_event = {
+    id = al_japan.1235
+    title = al_japan.1235.t
+    desc = al_japan.1235.d
+    trigger = {has_completed_focus = RJP_kokutai }
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+        name = al_japan.1235.a
+        modify_country_flag = {
+            flag  = RJP_dec_democracy_power
+            value = 5
+        }
+    }
+}
+
+country_event = {
+    id = al_japan.1236
+    title = al_japan.1236.t
+    desc = al_japan.1236.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+    trigger = {has_completed_focus = RJP_kokutai }
+    option = {
+        name = al_japan.1236.a
+    }
+}
+
+country_event = {
+    id = al_japan.1241
+    title = al_japan.1241.t
+    desc = al_japan.1241.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = JAP
+        has_active_mission  = RJP_kansui_movement
+    }
+    mean_time_to_happen = {
+        days =100
+    }
+    option = {
+        name = al_japan.1241.a
+    }
+}
+country_event = {
+    id = al_japan.1242
+    title = al_japan.1242.t
+    desc = al_japan.1242.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = JAP
+        has_active_mission  = RJP_kansui_movement
+    }
+    mean_time_to_happen = {
+        days =100
+    }
+    option = {
+        name = al_japan.1242.a
+    }
+}
+country_event = {
+    id = al_japan.1243
+    title = al_japan.1243.t
+    desc = al_japan.1243.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = JAP
+        has_active_mission  = RJP_kansui_movement
+    }
+    mean_time_to_happen = {
+        days =100
+    }
+    option = {
+        name = al_japan.1243.a
+    }
+}
+country_event = {
+    id = al_japan.1244
+    title = al_japan.1244.t
+    desc = al_japan.1244.d
+
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = JAP
+        has_active_mission  = RJP_kansui_movement
+    }
+    mean_time_to_happen = {
+        days =100
+    }
+    option = {
+        name = al_japan.1244.a
+    }
+}
+##維新
+country_event = {
+    id = al_japan.2201
+    title = al_japan.2201.t
+    desc = al_japan.2201.d
+    picture = GFX_sunset_crash
+
+    is_triggered_only = no
+    fire_only_once = yes
+
+    trigger = {
+        tag = JAP
+        has_completed_focus = RJP_eigen_restoration
+    }
+
+    option = {
+        name = al_japan.2201.a
+        ai_chance = { base = 1 }
+		add_stability = -0.1
+		add_war_support = -0.05
+		add_political_power = -200
+		add_popularity = {
+			ideology = accelerationism
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = reactionism
+			popularity = -0.5
+		}
+		set_politics = {
+			ruling_party = accelerationism
+			elections_allowed = no
+		}
+    }
+}
 ##維新
 country_event = {
     id = al_japan.2201
