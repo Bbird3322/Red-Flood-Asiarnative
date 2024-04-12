@@ -15,7 +15,7 @@ add_ideas = {
 	JAP_rural_backwater
 	JAP_zaib_dominion
 	limited_conscription
-	JAP_interservice_army_strengthened
+	JAP_interservice_rivalry_army_dominant
 }
 
 # Events 
@@ -265,7 +265,7 @@ create_country_leader = {
 	name = "Araki_Sadao"
 	desc = "POLITICS_ARAKI_SADAO_DESC"
 	picture = "gfx/leaders/JAP/Portrait_Araki_Sadao.png"
-	ideology = samurai_reaction
+	ideology = reactionism
 }
 
 create_country_leader = {

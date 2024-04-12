@@ -169,8 +169,8 @@ country_event = {
             name = RJP_dec_army_influence
             value = -50
         }
-        add_stability = -10
-        add_war_support = -20
+        add_stability = -0.1
+        add_war_support = -0.2
     }
     option = {
         name=al_japan.1102.b
@@ -178,8 +178,8 @@ country_event = {
             name = RJP_dec_army_influence
             value = -30
         }
-        add_stability = -5
-        add_war_support = -10
+        add_stability = -0.05
+        add_war_support = -0.1
     }
     option = {
         name=al_japan.1102.c        
@@ -204,6 +204,10 @@ country_event ={
             ideology = despotism
             long_name = RJP_green_wind_party
             name = RJP_green_wind_party
+            modifier_country_flag = {
+                flag = RJP_dec_democracy_power
+                value = 30
+            }
         }
         hidden_effect = {
             JAP = {
@@ -258,7 +262,7 @@ country_event = {
     id = al_japan.1201
     title = al_japan.1201.t
     desc = al_japan.1201.d
-
+    picture = JAP_tokkou_0
     is_triggered_only = yes
     fire_only_once = no
 
@@ -297,7 +301,7 @@ country_event = {
     id = al_japan.1203
     title = al_japan.1203.t
     desc = al_japan.1203.d
-
+    picture = JAP_tokkou_2
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_nameless_agency }
@@ -332,7 +336,7 @@ country_event = {
     id = al_japan.1205
     title = al_japan.1205.t
     desc = al_japan.1205.d
-
+    picture = JAP_tokkou_3
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_nameless_agency }
@@ -355,7 +359,7 @@ country_event = {
     trigger = {has_completed_focus = RJP_nameless_agency }
     option = {
         name = al_japan.1206.a
-		add_political_power = 25
+		add_political_power = 40
         modify_country_flag = {
             flag = RJP_dec_army_influence
             value = 2
@@ -367,7 +371,7 @@ country_event = {
     id = al_japan.1207
     title = al_japan.1207.t
     desc = al_japan.1207.d
-
+    picture = JAP_tokkou_1
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kokutai }
@@ -401,7 +405,7 @@ country_event = {
     id = al_japan.1209
     title = al_japan.1209.t
     desc = al_japan.1209.d
-
+    picture = JAP_promotion_0
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kemo_katsudo }
@@ -433,7 +437,7 @@ country_event = {
     id = al_japan.1211
     title = al_japan.1211.t
     desc = al_japan.1211.d
-
+    picture = JAP_promotion_1
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kemo_katsudo }
@@ -450,7 +454,7 @@ country_event = {
     id = al_japan.1212
     title = al_japan.1212.t
     desc = al_japan.1212.d
-
+    picture = JAP_tokkou_0
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kemo_katsudo }
@@ -462,7 +466,7 @@ country_event = {
     id = al_japan.1213
     title = al_japan.1213.t
     desc = al_japan.1213.d
-
+    picture = JAP_promotion_2
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kemo_katsudo }
@@ -479,7 +483,6 @@ country_event = {
     id = al_japan.1214
     title = al_japan.1214.t
     desc = al_japan.1214.d
-
     is_triggered_only = yes
     fire_only_once = no
     trigger = {has_completed_focus = RJP_kemo_katsudo }
@@ -494,7 +497,7 @@ country_event = {
     trigger = {has_completed_focus = RJP_kokutai }
     is_triggered_only = yes
     fire_only_once = no
-
+    picture = JAP_promotion_3
     option = {
         name = al_japan.1215.a
         modify_country_flag = {
@@ -784,7 +787,7 @@ country_event = {
     id = al_japan.1241
     title = al_japan.1241.t
     desc = al_japan.1241.d
-
+    major = yes	
     is_triggered_only = yes
     fire_only_once = yes
     trigger = {
@@ -792,17 +795,21 @@ country_event = {
         has_active_mission  = RJP_kansui_movement
     }
     mean_time_to_happen = {
-        days =100
+        days = 30
     }
     option = {
         name = al_japan.1241.a
+        modifier_country_flag = { 
+            name = RJP_dec_army_influence
+            value = -20
+        }
     }
 }
 country_event = {
     id = al_japan.1242
     title = al_japan.1242.t
     desc = al_japan.1242.d
-
+    major = yes	
     is_triggered_only = yes
     fire_only_once = yes
     trigger = {
@@ -810,17 +817,21 @@ country_event = {
         has_active_mission  = RJP_kansui_movement
     }
     mean_time_to_happen = {
-        days =100
+        days = 30
     }
     option = {
         name = al_japan.1242.a
+        modifier_country_flag = { 
+            name = RJP_dec_army_influence
+            value = 20
+        }
     }
 }
 country_event = {
     id = al_japan.1243
     title = al_japan.1243.t
     desc = al_japan.1243.d
-
+    major = yes	
     is_triggered_only = yes
     fire_only_once = yes
     trigger = {
@@ -828,17 +839,21 @@ country_event = {
         has_active_mission  = RJP_kansui_movement
     }
     mean_time_to_happen = {
-        days =100
+        days = 30
     }
     option = {
         name = al_japan.1243.a
+        modifier_country_flag = { 
+            name = RJP_dec_democracy_power
+            value = 20
+        }
     }
 }
 country_event = {
     id = al_japan.1244
     title = al_japan.1244.t
     desc = al_japan.1244.d
-
+    major = yes	
     is_triggered_only = yes
     fire_only_once = yes
     trigger = {
@@ -846,10 +861,14 @@ country_event = {
         has_active_mission  = RJP_kansui_movement
     }
     mean_time_to_happen = {
-        days =100
+        days = 30
     }
     option = {
         name = al_japan.1244.a
+        modifier_country_flag = { 
+            name = RJP_dec_democracy_power
+            value = -20
+        }
     }
 }
 ##維新

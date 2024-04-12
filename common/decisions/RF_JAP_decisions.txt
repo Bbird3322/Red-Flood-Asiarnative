@@ -709,7 +709,7 @@
 			allowed = {tag = JAP}
 			available = { 
 				AND = {
-					has_country_flag = { flag = RJP_dec_army_influence value < 10 }
+					has_country_flag = { flag = RJP_dec_army_influence value < 20 }
 					has_country_flag = { flag = RJP_dec_democracy_power value > 80 }
 				}
 			}
@@ -717,7 +717,7 @@
 			activation = {has_completed_focus = RJP_kokutai}
 			selectable_mission = no
 			is_good = no
-			days_mission_timeout = 150
+			days_mission_timeout = 200
 			timeout_effect = {}
 			complete_effect = { complete_national_focus = RJP_civilian_control }
 		}
