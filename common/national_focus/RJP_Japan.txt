@@ -118,140 +118,6 @@ focus = {
 	completion_reward = {
 	}
 }
-focus = {
-	id = RJP_over_the_sea
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_sea_control }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=-1
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_moving_airport
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_sea_control }
-	prerequisite = { focus = RJP_z_axis}
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=3
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_universal_theory
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_moving_airport}
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=3
-	y=5
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_watchtower
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_sea_control }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=1
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_from_deep_sea
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_watchtower }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=1
-	y=5
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_the_best_way
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_from_deep_sea }
-	prerequisite = { focus = RJP_universal_theory}
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=2
-	y=6
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_the_strongest
-	icon = GFX_focus_heavy_cruiser_production
-	prerequisite = { focus = RJP_watchtower }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 10
-	}
-	x=-1
-	y=5
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
 #陸軍近代化2#
 focus = {
 	id = RJP_importance_of_impact
@@ -324,44 +190,6 @@ focus = {
 }
 
 focus = {
-	id = RJP_chenge_everything
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_use_of_tank}
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=7
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_expand_tank
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_chenge_everything}
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=7
-	y=5
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
 	id = RJP_sub_weapon
 	icon = GFX_focus_pro_zaibatsu_focus_1
 	prerequisite = { focus = RJP_importance_of_impact }
@@ -429,27 +257,6 @@ focus = {
 	}
 }
 
-focus = {
-	id = RJP_make_better
-	icon = GFX_focus_design_new_firearms
-	prerequisite = { focus = RJP_sub_weapon }
-	mutually_exclusive = { focus = RJP_chenge_everything }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=12
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-
 #空軍
 focus = {
 	id = RJP_z_axis
@@ -481,120 +288,6 @@ focus = {
 	}
 }
 
-focus = {
-	id = RJP_problem_of_engine
-	icon = GFX_invest_in_factories
-	prerequisite = { focus = RJP_use_of_tank
-					 focus = RJP_z_axis }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=5
-	y=4
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 1
-			uses = 2
-			category = cat_air_engine
-		}
-		add_tech_bonus = {
-			bonus = 1
-			uses = 1
-
-		}
-	}
-}
-
-focus = {
-	id = RJP_zero
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_problem_of_engine }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=5
-	y=5
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		create_equipment_variant = {
-			name = "A6M Zero-Sen"
-			type = cv_small_plane_airframe_2
-			allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
-				special_type_slot_1 = drop_tanks
-				special_type_slot_2 = fuel_tanks_small
-			}
-			icon = "GFX_JAP_cv_fighter2_medium"
-		}
-	}
-}
-
-focus = {
-	id = RJP_further_away
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_zero }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=5
-	y=6
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			category = cat_heavy_fighter
-		}
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			category = cat_strategic_bomber
-		}
-	}
-}
-
-focus = {
-	id = RJP_future_plane
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_further_away }
-	available = {
-	}
-	bypass = { }
-	cost = 7
-	ai_will_do = {
-		factor = 100
-	}
-	x=5
-	y=7
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 2
-			category = jet_technology
-		}
-	}
-}
 #経済ツリー
 focus = {
 	id = RJP_sunset_crash
@@ -670,7 +363,7 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 17
+	x = 16
 	y = 1
 	cost = 2
 	ai_will_do = {
@@ -681,7 +374,6 @@ focus = {
 	
 	completion_reward = {		
 		swap_ideas = {
-		remove_idea = JAP_sunset_crash
 		add_idea = JAP_no_bail_out
 	}
 	random_owned_controlled_state = {
@@ -703,7 +395,7 @@ focus = {
 	available = {
 	}
 	bypass = { }
-	x = 17
+	x = 16
 	y = 2
 	cost = 2
 	ai_will_do = {
@@ -730,7 +422,7 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 17
+	x = 15
 	y = 3
 	cost = 2
 	ai_will_do = {
@@ -744,9 +436,35 @@ focus = {
 }
 
 focus = {
-	id = RJP_natural_elimination
+	id = RJP_export_manpower
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_new_enterprise_protection }
+	prerequisite = { focus = RJP_tax_reform}
+	available = {
+		JAP = {
+			has_government = despotism
+			NOT = {
+				has_war_with = JPR
+			}
+		}
+	}
+	bypass = { }
+	x = 17
+	y = 3
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+	}
+} 
+
+focus = {
+	id = RJP_connect_colony
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = { focus = RJP_export_manpower }
 	available = {
 	}
 	bypass = { }
@@ -764,29 +482,9 @@ focus = {
 }
 
 focus = {
-	id = RJP_connect_colony
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_natural_elimination }
-	available = {
-	}
-	bypass = { }
-	x = 17
-	y = 5
-	cost = 2
-	ai_will_do = {
-		factor = 100
-	}
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		add_political_power = -100
-	}
-}
-
-focus = {
 	id = RJP_debridement
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_connect_colony}
+	prerequisite = { focus = RJP_new_enterprise_protection}
 	available = {
 		JAP = {
 			has_government = despotism
@@ -796,8 +494,8 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 17
-	y = 6
+	x = 15
+	y = 4
 	cost = 2
 	ai_will_do = {
 		factor = 100
@@ -823,7 +521,7 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 19
+	x = 20
 	y = 1
 	cost = 2
 	ai_will_do = {
@@ -849,8 +547,34 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 19
+	x = 20
 	y = 2
+	cost = 2
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = RJP_public_utilities
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = { focus = RJP_deficit_bonds }
+	available = {
+		JAP = {
+			has_government = despotism
+			NOT = {
+				has_war_with = JPR
+			}
+		}
+	}
+	bypass = { }
+	x = 19
+	y = 3
 	cost = 2
 	ai_will_do = {
 		factor = 100
@@ -876,32 +600,6 @@ focus = {
 	}
 	bypass = { }
 	x = 19
-	y = 3
-	cost = 2
-	ai_will_do = {
-		factor = 100
-	}
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_public_utilities
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_important_industrial_control}
-	available = {
-		JAP = {
-			has_government = despotism
-			NOT = {
-				has_war_with = JPR
-			}
-		}
-	}
-	bypass = { }
-	x = 19
 	y = 4
 	cost = 2
 	ai_will_do = {
@@ -915,9 +613,9 @@ focus = {
 }
 
 focus = {
-	id = RJP_import_manpower
+	id = RJP_rise_price_control
 	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_public_utilities}
+	prerequisite = { focus = RJP_deficit_bonds}
 	available = {
 		JAP = {
 			has_government = despotism
@@ -927,33 +625,8 @@ focus = {
 		}
 	}
 	bypass = { }
-	x = 19	y = 5
-	cost = 2
-	ai_will_do = {
-		factor = 100
-	}
-
-	available_if_capitulated = yes
-	
-	completion_reward = {
-	}
-}
-
-focus = {
-	id = RJP_the_bandaid
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = { focus = RJP_import_manpower}
-	available = {
-		JAP = {
-			has_government = despotism
-			NOT = {
-				has_war_with = JPR
-			}
-		}
-	}
-	bypass = { }
-	x = 19
-	y = 6
+	x = 21
+	y = 3
 	cost = 7
 	ai_will_do = {
 		factor = 100
@@ -966,13 +639,40 @@ focus = {
 }
 
 focus = {
-	id = RJP_economic_midaid
+	id = RJP_farmland_reform
+	icon = GFX_focus_pro_zaibatsu_focus_1
+	prerequisite = { focus = RJP_rise_price_control}
+	available = {
+		JAP = {
+			has_government = despotism
+			NOT = {
+				has_war_with = JPR
+			}
+		}
+	}
+	bypass = { }
+	x = 21
+	y = 4
+	cost = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	available_if_capitulated = yes
+	
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = RJP_stoped_clock
 	icon = GFX_focus_economic_miracle
-	prerequisite = { focus = RJP_debridement focus = RJP_the_bandaid}
+	prerequisite = { focus = RJP_important_industrial_control focus = RJP_debridement }
+	prerequisite = { focus = RJP_connect_colony focus = RJP_farmland_reform }
 	available = { }
 	bypass = { }
 	x = 18
-	y = 7
+	y = 5
 	cost = 9
 	ai_will_do = {
 		factor = 100
@@ -1041,7 +741,7 @@ focus = {
 
 	completion_reward = {
 		country_event = al_japan.1101
-		add_political_power = 25
+		add_political_power = 50
 	}
 }
 
@@ -1066,7 +766,7 @@ focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		add_political_power = 25
+		add_political_power = 50
 	}
 }
 
@@ -1146,6 +846,10 @@ focus = {
 	prerequisite = {focus = RJP_kagekiha_tsubusu }
 	prerequisite = {focus = RJP_secret_meeting}
 	available = {
+
+	}
+	cancel = {
+		has_active_mission = RJP_kansui_movement
 	}
 	allow_branch= {	has_country_flag = stand_with_democracy}
 	bypass = { }
@@ -1297,28 +1001,7 @@ focus = {
 		
 	}
 }
-focus = {
-	id = RJP_reserve_duty
-	icon = GFX_focus_pro_zaibatsu_focus_1
-	prerequisite = {focus = RJP_young_officer }
-	available = {
-		has_country_flag = goodbye_democracy
-	}
-	allow_branch= {	has_country_flag = goodbye_democracy}
-	bypass = { }
-	x = 29
-	y = 2
-	cost = 2
-	ai_will_do = {
-		factor = 100
-	}
 
-	available_if_capitulated = yes
-	
-	completion_reward = {
-		
-	}
-}
 focus = {
 	id = RJP_reserve_duty
 	icon = GFX_focus_pro_zaibatsu_focus_1
